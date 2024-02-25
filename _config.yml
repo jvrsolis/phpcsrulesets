@@ -1,5 +1,7 @@
 
-theme: jekyll-theme-minimal
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
 title: Javi's PHP Standards
 layout: default
 description: Bookmark this to keep an eye on my project updates!
