@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Slevomat Coding Standards"
+permalink: /slevmomat
+---
 ## Table of Contents
 
 - [Arrays](#Arrays)
