@@ -9,10 +9,10 @@
 
 
 
-</details><details id='Debug'>
+</details><details open id='Debug'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Debug</summary>
 <hr>
-<details id='CodeAnalyzerStandard'>
+<details open id='CodeAnalyzerStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Zend Code Analyzer</summary>
 PHP Code should pass the zend code analyzer.
 
@@ -45,10 +45,10 @@ function foo($bar, $baz)
  </tr>
 </table>
 </details>
-</details><details id='Files'>
+</details><details open id='Files'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Files</summary>
 <hr>
-<details id='ClosingTagStandard'>
+<details open id='ClosingTagStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Closing PHP Tags</summary>
 Files should not have closing php tags.
 
@@ -78,10 +78,10 @@ $var = 1;
  </tr>
 </table>
 </details>
-</details><details id='NamingConventions'>
+</details><details open id='NamingConventions'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Naming Conventions</summary>
 <hr>
-<details id='ValidVariableNameStandard'>
+<details open id='ValidVariableNameStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Variable Names</summary>
 Variable names should be camelCased with the first letter lowercase.  Private and protected member variables should begin with an underscore
 

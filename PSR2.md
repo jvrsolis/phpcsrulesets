@@ -20,10 +20,10 @@
 
 
 
-</details><details id='Classes'>
+</details><details open id='Classes'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Classes</summary>
 <hr>
-<details id='ClassDeclarationStandard'>
+<details open id='ClassDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Class Declarations</summary>
 There should be exactly 1 space between the abstract or final keyword and the class keyword and between the class keyword and the class name.  The extends and implements keywords, if present, must be on the same line as the class name.  When interfaces implemented are spread over multiple lines, there should be exactly 1 interface mentioned per line indented by 1 level.  The closing brace of the class must go on the first line after the body of the class and must be on a line by itself.
 
@@ -53,7 +53,7 @@ abstract  class  Foo
 </td>
  </tr>
 </table>
-</details><details id='PropertyDeclarationStandard'>
+</details><details open id='PropertyDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Property Declarations</summary>
 Property names should not be prefixed with an underscore to indicate visibility.  Visibility should be used to declare properties rather than the var keyword.  Only one property should be declared within a statement.  The static declaration must come after the visibility declaration.
 
@@ -166,10 +166,10 @@ class Foo
  </tr>
 </table>
 </details>
-</details><details id='ControlStructures'>
+</details><details open id='ControlStructures'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Control Structures</summary>
 <hr>
-<details id='ControlStructureSpacingStandard'>
+<details open id='ControlStructureSpacingStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Control Structure Spacing</summary>
 Control Structures should have 0 spaces after opening parentheses and 0 spaces before closing parentheses.
 
@@ -199,7 +199,7 @@ if ( $foo ) {
 </td>
  </tr>
 </table>
-</details><details id='ElseIfDeclarationStandard'>
+</details><details open id='ElseIfDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Elseif Declarations</summary>
 PHP's elseif keyword should be used instead of else if.
 
@@ -233,7 +233,7 @@ if ($foo) {
 </td>
  </tr>
 </table>
-</details><details id='SwitchDeclarationStandard'>
+</details><details open id='SwitchDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Switch Declarations</summary>
 Case statements should be indented 4 spaces from the switch keyword.  It should also be followed by a space.  Colons in switch declarations should not be preceded by whitespace.  Break statements should be indented 4 more spaces from the case statement.  There must be a comment when falling through from one case into the next.
 
@@ -377,10 +377,10 @@ switch ($foo) {
  </tr>
 </table>
 </details>
-</details><details id='Files'>
+</details><details open id='Files'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Files</summary>
 <hr>
-<details id='ClosingTagStandard'>
+<details open id='ClosingTagStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Closing Tag</summary>
 Checks that the file does not end with a closing tag.
 
@@ -410,7 +410,7 @@ echo 'Foo';
 </td>
  </tr>
 </table>
-</details><details id='EndFileNewlineStandard'>
+</details><details open id='EndFileNewlineStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">End File Newline</summary>
 PHP Files should end with exactly one newline.
 
@@ -440,10 +440,10 @@ echo "Hello, world!"; // No newline or multiple newlines
  </tr>
 </table>
 </details>
-</details><details id='Methods'>
+</details><details open id='Methods'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Methods</summary>
 <hr>
-<details id='FunctionCallSignatureStandard'>
+<details open id='FunctionCallSignatureStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Function Call Signature</summary>
 Checks that the function call format is correct.
 
@@ -597,7 +597,7 @@ foo(
 </td>
  </tr>
 </table>
-</details><details id='FunctionClosingBraceStandard'>
+</details><details open id='FunctionClosingBraceStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Function Closing Brace</summary>
 Checks that the closing brace of a function goes directly after the body.
 
@@ -630,7 +630,7 @@ function foo()
 </td>
  </tr>
 </table>
-</details><details id='MethodDeclarationStandard'>
+</details><details open id='MethodDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Method Declarations</summary>
 Method names should not be prefixed with an underscore to indicate visibility.  The static keyword, when present, should come after the visibility declaration, and the final and abstract keywords should come before.
 
@@ -697,10 +697,10 @@ class Foo
  </tr>
 </table>
 </details>
-</details><details id='Namespaces'>
+</details><details open id='Namespaces'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Namespaces</summary>
 <hr>
-<details id='NamespaceDeclarationStandard'>
+<details open id='NamespaceDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Namespace Declarations</summary>
 There must be one blank line after the namespace declaration.
 
@@ -729,7 +729,7 @@ use \Baz;
 </td>
  </tr>
 </table>
-</details><details id='UseDeclarationStandard'>
+</details><details open id='UseDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Namespace Declarations</summary>
 Each use declaration must contain only one namespace and must come after the first namespace declaration.  There should be one blank line after the final use statement.
 

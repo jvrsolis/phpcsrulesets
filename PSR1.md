@@ -8,10 +8,10 @@
     - [Camel Caps Method Name Standard](#CamelCapsMethodNameStandard)
 
 
-<details id='Classes'>
+<details open id='Classes'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Classes</summary>
 <hr>
-<details id='ClassDeclarationStandard'>
+<details open id='ClassDeclarationStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Class Declaration</summary>
 Each class must be in a file by itself and must be under a namespace (a top-level vendor name).
 
@@ -75,10 +75,10 @@ class Bar {
  </tr>
 </table>
 </details>
-</details><details id='Files'>
+</details><details open id='Files'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Files</summary>
 <hr>
-<details id='SideEffectsStandard'>
+<details open id='SideEffectsStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Side Effects</summary>
 A php file should either contain declarations with no side effects, or should just have logic (including side effects) with no declarations.
 
@@ -113,10 +113,10 @@ echo "Class Foo loaded."
  </tr>
 </table>
 </details>
-</details><details id='Methods'>
+</details><details open id='Methods'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Methods</summary>
 <hr>
-<details id='CamelCapsMethodNameStandard'>
+<details open id='CamelCapsMethodNameStandard'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Method Name</summary>
 Method names MUST be declared in camelCase.
 
