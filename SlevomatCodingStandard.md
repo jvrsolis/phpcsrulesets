@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "Slevomat Coding Standards"
 permalink: /slevmomat
 ---
