@@ -192,10 +192,10 @@ permalink: /slevmomat
     - [Whitespaces. Duplicate Spaces Sniff](#Whitespaces.DuplicateSpacesSniff)
 
 
-<details id='Arrays'>
+<details open id='Arrays'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Arrays</summary>
 <hr>
-<details id='Arrays.AlphabeticallySortedByKeysSniff'>
+<details open id='Arrays.AlphabeticallySortedByKeysSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Alphabetically Sorted by Keys</summary>
 Keyed multi-line arrays must be sorted alphabetically by their keys.
 
@@ -257,7 +257,7 @@ $arr = [
 </td>
  </tr>
 </table>
-</details><details id='Arrays.ArrayAccessSniff'>
+</details><details open id='Arrays.ArrayAccessSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Array Access Spaces</summary>
 There should be no space between the array variable and the array access operator, as well as no space between array access operators.
 
@@ -305,7 +305,7 @@ $element = $array[0] [ 1];
 </td>
  </tr>
 </table>
-</details><details id='Arrays.DisallowImplicitArrayCreationSniff'>
+</details><details open id='Arrays.DisallowImplicitArrayCreationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Implicit Array Creation</summary>
 Implicit array creation is disallowed. All arrays must be explicitly defined.
 
@@ -404,7 +404,7 @@ class Example {
 </td>
  </tr>
 </table>
-</details><details id='Arrays.DisallowPartiallyKeyedSniff'>
+</details><details open id='Arrays.DisallowPartiallyKeyedSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Partially Keyed Arrays</summary>
 Arrays must not be partially keyed. Either use all keys or no keys.
 
@@ -450,7 +450,7 @@ $arr = ['foo' => 'bar', 'baz', 'qux' => 'quux'];
 </td>
  </tr>
 </table>
-</details><details id='Arrays.MultiLineArrayEndBracketPlacementSniff'>
+</details><details open id='Arrays.MultiLineArrayEndBracketPlacementSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Multi-Line Array End Bracket Placement</summary>
 For multi-line arrays, the end bracket must be placed correctly in relation to the nested array's start and end positioning. 
 If a nested array is present, the closing bracket of the parent array must be on the same line as the closing bracket of the nested array 
@@ -516,7 +516,7 @@ $arr = [
 </td>
  </tr>
 </table>
-</details><details id='Arrays.SingleLineArrayWhitespaceSniff'>
+</details><details open id='Arrays.SingleLineArrayWhitespaceSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Single Line Array Whitespace</summary>
 Enforces whitespace conventions for single line arrays.
 
@@ -582,7 +582,7 @@ $arr = ['foo' ,'bar']; // Invalid: Space before comma or incorrect space after c
 </td>
  </tr>
 </table>
-</details><details id='Arrays.TrailingArrayCommaSniff'>
+</details><details open id='Arrays.TrailingArrayCommaSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Trailing Array Comma</summary>
 Multi-line arrays must have a trailing comma after the last element.
 
@@ -650,11 +650,11 @@ EOD
  </tr>
 </table>
 </details>
-</details><details id='Attributes'>
+</details><details open id='Attributes'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Attributes</summary>
 <hr>
 
-<details id='Attributes.AttributeAndTargetSpacingSniff'>
+<details open id='Attributes.AttributeAndTargetSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Attribute and Target Spacing</summary>
 This rule checks for the correct number of blank lines between an attribute and its target based on the configured `linesCount`. If `allowOnSameLine` is set to true, an attribute and its target may be on the same line; otherwise, a specific amount of blank lines as defined by `linesCount` is required.
 
@@ -720,7 +720,7 @@ class ExampleClass
  </tr>
 </table>
 </details>
-<details id='Attributes.AttributesOrderSniff'>
+<details open id='Attributes.AttributesOrderSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Attributes Order</summary>
 Attributes must be ordered based on the configuration provided either manually or alphabetically.
 
@@ -800,7 +800,7 @@ class Example {}
 </td>
  </tr>
 </table>
-</details><details id='Attributes.DisallowAttributesJoiningSniff'>
+</details><details open id='Attributes.DisallowAttributesJoiningSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Attributes Joining</summary>
 Individual attributes must not be joined. Each attribute must be declared separately.
 
@@ -836,7 +836,7 @@ class Example {
  </tr>
 </table>
 </details>
-<details id='Attributes.DisallowMultipleAttributesPerLineSniff'>
+<details open id='Attributes.DisallowMultipleAttributesPerLineSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Multiple Attributes Per Line</summary>
 Each attribute must be declared on its own line.
 
@@ -868,7 +868,7 @@ private $property;
  </tr>
 </table>
 </details>
-<details id='Attributes.RequireAttributeAfterDocCommentSniff'>
+<details open id='Attributes.RequireAttributeAfterDocCommentSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Attribute After Doc Comment</summary>
 Attributes must be placed after the documentation comment.
 
@@ -903,10 +903,10 @@ public function someMethod() {}
  </tr>
 </table>
 </details>
-</details><details id='Classes'>
+</details><details open id='Classes'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Classes</summary>
 <hr>
-<details id='Classes.AbstractMethodSignature'>
+<details open id='Classes.AbstractMethodSignature'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Method Signature Spacing</summary>
 Ensure there is consistent spacing in method signatures: one space after the method name and before the opening parenthesis, and no spaces around parentheses enclosing parameters.
 
@@ -976,7 +976,7 @@ class Example
 </td>
  </tr>
 </table>
-</details><details id='Classes.AbstractPropertyConstantAndEnumCaseSpacing'>
+</details><details open id='Classes.AbstractPropertyConstantAndEnumCaseSpacing'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Property, Constant, and Enum Case Spacing</summary>
 Proper spacing before class properties, constants, and enum cases is required to maintain readability.
 The spacing varies depending on whether the member is preceded by a comment.
@@ -1119,7 +1119,7 @@ class Example {
 The sniff enforces spacing rules between class members to enhance readability. Members must be separated by 
 one or more lines if preceded by a comment, and strictly one line otherwise, but these values are configurable.
 Ensuring consistent spacing helps in maintaining a neat and understandable code structure.
-</details><details id='Classes.BackedEnumTypeSpacingSniff'>
+</details><details open id='Classes.BackedEnumTypeSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Backed Enum Type Spacing</summary>
 Proper spacing is required for backed enums. There must be a specific number of spaces before the colon that separates the enum name from its type, and before the type itself.
 
@@ -1173,7 +1173,7 @@ enum Suit :string {
 </td>
  </tr>
 </table>
-</details><details id='Classes.ClassConstantVisibilitySniff'>
+</details><details open id='Classes.ClassConstantVisibilitySniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Class Constant Visibility</summary>
 Class constants must have visibility declared.
 
@@ -1203,7 +1203,7 @@ class MyClass {
 </td>
  </tr>
 </table>
-</details><details id='Classes.ClassLengthSniff'>
+</details><details open id='Classes.ClassLengthSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Class Length</summary>
 Classes must not exceed a specific number of lines.
 
@@ -1252,7 +1252,7 @@ class LongClass {
  </tr>
 </table>
 </details>
-<details id='Classes.ClassMemberSpacingSniff'>
+<details open id='Classes.ClassMemberSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Class Member Spacing</summary>
 There must be a specified number of blank lines between class members.
 
@@ -1314,7 +1314,7 @@ To maintain readability and a clean structure within class definitions, it is im
 
 You can automatically fix violations of this rule by running PHP CodeSniffer with the autofix option, which will adjust the number of blank lines between class members to meet the expected standard.
 </details>
-<details id='Classes.ClassStructureSniff'>
+<details open id='Classes.ClassStructureSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Class Structure Order</summary>
 The structure within a class must follow a specific order. The order is determined by groups such as constants, properties, and methods (including special methods like constructors). Each group has further subdivisions based on visibility (public, protected, private) and other attributes (static, abstract, final).
 
@@ -1394,7 +1394,7 @@ class SampleClass
 </td>
  </tr>
 </table>
-</details><details id='Classes.ConstantSpacingSniff'>
+</details><details open id='Classes.ConstantSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Constant Spacing</summary>
 Constants must be followed by a configurable number of blank lines.
 
@@ -1453,7 +1453,7 @@ public function exampleMethod() {}
 </td>
 </tr>
 </table>
-</details><details id='Classes.DisallowConstructorPropertyPromotionSniff'>
+</details><details open id='Classes.DisallowConstructorPropertyPromotionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Constructor Property Promotion</summary>
 Constructor property promotion must not be used in classes.
 
@@ -1483,7 +1483,7 @@ public function __construct(public $property) {
  </tr>
 </table>
 </details>
-<details id='Classes.DisallowLateStaticBindingForConstantsSniff'>
+<details open id='Classes.DisallowLateStaticBindingForConstantsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Late Static Binding for Constants</summary>
 Using late static binding for constants is disallowed. Instead, 'self::' should be used.
 
@@ -1510,7 +1510,7 @@ $value = static::CONSTANT;
  </tr>
 </table>
 </details>
-<details id='Classes.DisallowMultiConstantDefinitionSniff'>
+<details open id='Classes.DisallowMultiConstantDefinitionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Multi Constant Definition</summary>
 Defining multiple constants in a single statement is disallowed. Each constant must be declared in its own statement.
 
@@ -1546,7 +1546,7 @@ class Foo
 </td>
  </tr>
 </table>
-</details><details id='Classes.DisallowMultiPropertyDefinitionSniff'>
+</details><details open id='Classes.DisallowMultiPropertyDefinitionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Multi Property Definition</summary>
 Each property must be declared in its own statement.
 
@@ -1574,7 +1574,7 @@ private $firstProperty, $secondProperty;
 </td>
  </tr>
 </table>
-</details><details id='Classes.DisallowStringExpressionPropertyFetchSniff'>
+</details><details open id='Classes.DisallowStringExpressionPropertyFetchSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow String Expression Property Fetch</summary>
 String expression property fetch is disallowed, use identifier property fetch instead. This means accessing object properties should be done using identifier directly instead of a string that gets evaluated.
 
@@ -1623,7 +1623,7 @@ $user->{'name'};
 </td>
  </tr>
 </table>
-</details><details id='Classes.EmptyLinesAroundClassBracesSniff'>
+</details><details open id='Classes.EmptyLinesAroundClassBracesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Empty Lines Around Class Braces</summary>
 There must be exactly the specified number of empty lines around class braces.
 
@@ -1765,7 +1765,7 @@ class CustomSpacingExample {
 </td>
  </tr>
 </table>
-</details><details id='Classes.EnumCaseSpacingSniff'>
+</details><details open id='Classes.EnumCaseSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Enum Case Spacing</summary>
 Proper spacing must be maintained after enum cases. Variable number of blank lines may be configured, but a consistent style is enforced.
 
@@ -1839,7 +1839,7 @@ enum Status {
  </tr>
 </table>
 </details>
-<details id='Classes.ForbiddenPublicPropertySniff'>
+<details open id='Classes.ForbiddenPublicPropertySniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Forbidden Public Property</summary>
 Using public properties in classes is forbidden. Use method access instead.
 
@@ -1878,7 +1878,7 @@ class MyClass {
  </tr>
 </table>
 </details>
-<details id='Classes.MethodSpacingSniff'>
+<details open id='Classes.MethodSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Method Spacing</summary>
 There must be a specific number of blank lines between method declarations within a class. This can be adjusted by setting the minimum and maximum number of allowed blank lines.
 
@@ -1977,7 +1977,7 @@ class Example
 </td>
  </tr>
 </table>
-</details><details id='Classes.MissingClassGroupsException'>
+</details><details open id='Classes.MissingClassGroupsException'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Proper Class Grouping Documentation</summary>
 All custom exception classes must properly document missing class groups in configuration through a descriptive exception message.
 
@@ -2033,7 +2033,7 @@ class MissingClassGroupsException extends Exception
 </td>
  </tr>
 </table>
-</details><details id='Classes.ModernClassNameReferenceSniff'>
+</details><details open id='Classes.ModernClassNameReferenceSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Modern Class Name Reference</summary>
 Instead of using magic constants or functions like get_class(), get_parent_class(), or get_called_class(), directly use the ::class syntax for cleaner and more straightforward class name references.
 
@@ -2119,7 +2119,7 @@ $className = get_called_class();
 </td>
  </tr>
 </table>
-</details><details id='Classes.ParentCallSpacingSniff'>
+</details><details open id='Classes.ParentCallSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Parent Call Spacing</summary>
 Correct spacing around a parent:: call is enforced. 
 This includes spacing before and after the call, 
@@ -2214,7 +2214,7 @@ class Example extends ParentClass {
 </td>
 </tr>
 </table>
-</details><details id='Classes.RequireAbstractOrFinalSniff'>
+</details><details open id='Classes.RequireAbstractOrFinalSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Abstract or Final Class Declaration</summary>
 All classes should be declared using either the "abstract" or "final" keyword to enforce a clear object inheritance policy. This ensures classes are designed with inheritance in mind or explicitly marked as final to prevent inheritance.
 
@@ -2268,7 +2268,7 @@ class MyClass {
 </td>
  </tr>
 </table>
-</details><details id='Classes.RequireConstructorPropertyPromotionSniff'>
+</details><details open id='Classes.RequireConstructorPropertyPromotionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Required Constructor Property Promotion</summary>
 Constructor properties must be promoted when conditions are met (PHP 8.0+).
 
@@ -2307,7 +2307,7 @@ class Example {
  </tr>
 </table>
 </details>
-<details id='Classes.RequireMultiLineMethodSignatureSniff'>
+<details open id='Classes.RequireMultiLineMethodSignatureSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Multi-Line Method Signature</summary>
 Method signatures must be split into multiple lines when they exceed a certain length or parameter count, ensuring each parameter is on its own line.
 
@@ -2348,7 +2348,7 @@ class ExampleClass
  </tr>
 </table>
 </details>
-<details id='Classes.RequireSelfReferenceSniff'>
+<details open id='Classes.RequireSelfReferenceSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Self Reference</summary>
 When referencing the current class, 'self' should be used instead of the class name.
 
@@ -2421,7 +2421,7 @@ class AnotherExample {
 </td>
  </tr>
 </table>
-</details><details id='Classes.RequireSingleLineMethodSignatureSniff'>
+</details><details open id='Classes.RequireSingleLineMethodSignatureSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Single Line Method Signature</summary>
 The signature of a method must be placed on a single line if it does not exceed the configured maximum line length. This promotes better readability and consistency across the codebase.
 
@@ -2482,7 +2482,7 @@ class Example {
 </td>
  </tr>
 </table>
-</details><details id='Classes.SuperfluousAbstractClassNamingSniff'>
+</details><details open id='Classes.SuperfluousAbstractClassNamingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Superfluous Abstract Class Naming</summary>
 Abstract classes must not have a prefix or suffix of "abstract" in their names. The presence of "abstract" in the class name is considered superfluous since the class is already declared as abstract.
 
@@ -2540,7 +2540,7 @@ abstract class CarAbstract
 </td>
  </tr>
 </table>
-</details><details id='Classes.SuperfluousErrorNamingSniff'>
+</details><details open id='Classes.SuperfluousErrorNamingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Superfluous Error Naming</summary>
 Class names ending with the suffix "Error" are considered superfluous unless the class name is exactly "Error".
 
@@ -2618,7 +2618,7 @@ class DatabaseError {
 </td>
 </tr>
 </table>
-</details><details id='Classes.SuperfluousExceptionNamingSniff'>
+</details><details open id='Classes.SuperfluousExceptionNamingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Superfluous Exception Naming</summary>
 Exception class names should not have a superfluous "Exception" suffix.
 
@@ -2668,7 +2668,7 @@ abstract class NotFoundException<em>Exception</em> {
 </td>
  </tr>
 </table>
-</details><details id='Classes.SuperfluousInterfaceNamingSniff'>
+</details><details open id='Classes.SuperfluousInterfaceNamingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Superfluous Interface Naming</summary>
 Interface names must not have a prefix or suffix of 'interface'.
 
@@ -2715,7 +2715,7 @@ interface AuthorizationInterface {}
  </tr>
 </table>
 </details>
-<details id='Classes.SuperfluousTraitNamingSniff'>
+<details open id='Classes.SuperfluousTraitNamingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Superfluous Trait Naming</summary>
 Superfluous suffix "Trait" in the trait names must be avoided. It should be clear from the namespace or context that the class is a trait without needing a suffix.
 
@@ -2752,7 +2752,7 @@ trait ExampleTrait
  </tr>
 </table>
 </details>
-<details id='Classes.TraitUseDeclarationSniff'>
+<details open id='Classes.TraitUseDeclarationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Trait Use Declaration</summary>
 Only one trait should be used per declaration. Multiple traits per use statement are forbidden.
 
@@ -2780,7 +2780,7 @@ use TraitName1, TraitName2;
 </td>
  </tr>
 </table>
-</details><details id='Classes.TraitUseSpacingSniff'>
+</details><details open id='Classes.TraitUseSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Trait Use Spacing</summary>
 This rule specifies the required number of blank lines before the first use statement, between use statements, and after the last use statement in a class, trait, or enum. 
 The configuration properties are:
@@ -2891,7 +2891,7 @@ class Example {
 </td>
  </tr>
 </table>
-</details><details id='Classes.UnsupportedClassGroupException'>
+</details><details open id='Classes.UnsupportedClassGroupException'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Unsupported Class Group Exception</summary>
 Exceptions must be thrown for unsupported class groups with a clear message.
 
@@ -2927,7 +2927,7 @@ try {
 </td>
  </tr>
 </table>
-</details><details id='Classes.UselessLateStaticBindingSniff'>
+</details><details open id='Classes.UselessLateStaticBindingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Late Static Binding</summary>
 Useless late static binding should be avoided when the class is declared as final.
 
@@ -2964,10 +2964,10 @@ final class SampleClass {
  </tr>
 </table>
 </details>
-</details><details id='Commenting'>
+</details><details open id='Commenting'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Commenting</summary>
 <hr>
-<details id='Commenting.AbstractRequireOneLineDocComment'>
+<details open id='Commenting.AbstractRequireOneLineDocComment'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require One-Line Doc Comment</summary>
 Doc comments for properties without description must be one-line.
 
@@ -2995,7 +2995,7 @@ Doc comments for properties without description must be one-line.
 </td>
  </tr>
 </table>
-</details><details id='Commenting.AnnotationNameSniff'>
+</details><details open id='Commenting.AnnotationNameSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Correct Annotation Names</summary>
 Annotation names must follow the defined standards for naming conventions.
 
@@ -3088,7 +3088,7 @@ class TestClass extends TestCase
  </tr>
 </table>
 </details>
-<details id='Commenting.DeprecatedAnnotationDeclarationSniff'>
+<details open id='Commenting.DeprecatedAnnotationDeclarationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Deprecated Annotation Description</summary>
 When using the "@deprecated" annotation, a description must be provided to explain the deprecation reason or to suggest an alternative.
 
@@ -3121,7 +3121,7 @@ function oldInterfaceFunction() {}
  </tr>
 </table>
 </details>
-<details id='Commenting.DisallowCommentAfterCodeSniff'>
+<details open id='Commenting.DisallowCommentAfterCodeSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Comment After Code</summary>
 Comments directly following code on the same line are disallowed. Comments must either precede the code block or be on their own line following the code block, adhering to proper indentation and code style guidelines.
 
@@ -3172,7 +3172,7 @@ $variable = 'value'; // Improperly placed comment
  </tr>
 </table>
 </details>
-<details id='Commenting.DisallowOneLinePropertyDocCommentSniff'>
+<details open id='Commenting.DisallowOneLinePropertyDocCommentSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow One Line Property Doc Comment</summary>
 Property doc comments must not be one-liners. Multi-line doc comments should be used instead.
 
@@ -3201,7 +3201,7 @@ Property doc comments must not be one-liners. Multi-line doc comments should be 
  </tr>
 </table>
 </details>
-<details id='Commenting.EmptyCommentSniff'>
+<details open id='Commenting.EmptyCommentSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Empty Comment</summary>
 Comments must not be empty. Empty comments are considered as clutter in the code and should be removed.
 
@@ -3275,7 +3275,7 @@ Comments must not be empty. Empty comments are considered as clutter in the code
 </td>
 </tr>
 </table>
-</details><details id='Commenting.ForbiddenAnnotationsSniff'>
+</details><details open id='Commenting.ForbiddenAnnotationsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Forbidden Annotations</summary>
 Usage of specific annotations is forbidden within documentation comments.
 
@@ -3341,7 +3341,7 @@ class ExampleClass {
 </td>
  </tr>
 </table>
-</details><details id='Commenting.ForbiddenCommentsSniff'>
+</details><details open id='Commenting.ForbiddenCommentsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Forbidden Comments</summary>
 Documentation comments must not contain forbidden comments as defined by the forbiddenCommentPatterns configuration.
 
@@ -3377,7 +3377,7 @@ class ExampleClass {
 </td>
  </tr>
 </table>
-</details><details id='Commenting.InlineDocCommentDeclarationSniff'>
+</details><details open id='Commenting.InlineDocCommentDeclarationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Inline Doc Comment Declaration</summary>
 Inline documentation comments must follow a specific format for `@var` annotations.
 It should be "/** @var type $variableName */" directly above the variable declaration or the line of code it describes.
@@ -3470,7 +3470,7 @@ $expirationDate = new DateTimeImmutable('+1 week');
 </tr>
 </table>
 </details>
-<details id='Commenting.RequireOneLineDocCommentSniff'>
+<details open id='Commenting.RequireOneLineDocCommentSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require One Line Doc Comment</summary>
 Found multi-line doc comment with single line content, use one-line doc comment instead.
 
@@ -3499,7 +3499,7 @@ Found multi-line doc comment with single line content, use one-line doc comment 
  </tr>
 </table>
 </details>
-<details id='Commenting.RequireOneLinePropertyDocCommentSniff'>
+<details open id='Commenting.RequireOneLinePropertyDocCommentSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require One Line Property DocComment</summary>
 Property DocComments must be written in a one-line format if they do not contain a description.
 
@@ -3565,7 +3565,7 @@ $name = 'John Doe';
 <!-- It's important to ensure that each example with a Valid case has a corresponding Invalid case if applicable based on the rule logic. 
          Since the rule specifically targets properties without a description in their DocComment for conversion to one-liner, 
          the second example showcases a scenario where multi-line comments are allowed (and thus both are marked as 'Valid')." -->
-</details><details id='Commenting.UselessFunctionDocCommentSniff'>
+</details><details open id='Commenting.UselessFunctionDocCommentSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Function DocComment</summary>
 Function docComments that do not provide additional information beyond what is already type hinted are considered useless. This includes functions with no parameters, no return type, or when all parameter and return types are fully type hinted in the function declaration itself, making the docComment redundant.
 
@@ -3656,7 +3656,7 @@ class SomeClass
 </td>
  </tr>
 </table>
-</details><details id='Commenting.UselessInheritDocCommentSniff'>
+</details><details open id='Commenting.UselessInheritDocCommentSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless InheritDoc Comment</summary>
 Documentation comments with only @inheritDoc are considered useless.
 
@@ -3716,10 +3716,10 @@ protected $myProperty;
  </tr>
 </table>
 </details>
-</details><details id='Complexity'>
+</details><details open id='Complexity'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Complexity</summary>
 <hr>
-<details id='Complexity.CognitiveSniff'>
+<details open id='Complexity.CognitiveSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Cognitive Complexity</summary>
 
 Cognitive complexity of functions and methods must be managed to maintain code readability and maintainability. Cognitive Complexity is a measure of how difficult a unit of code is to intuitively understand.
@@ -3795,10 +3795,10 @@ foreach ($items as $item) {
  </tr>
 </table>
 </details>
-</details><details id='ControlStructures'>
+</details><details open id='ControlStructures'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Control Structures</summary>
 <hr>
-<details id='ControlStructures.AbstractControlStructureSpacing'>
+<details open id='ControlStructures.AbstractControlStructureSpacing'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Control Structures Spacing</summary>
 Proper spacing in control structures is required for code readability. Before and after each control structure, a specific number of blank lines must be maintained as defined by this standard.
 
@@ -3884,7 +3884,7 @@ if ($condition) {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.AbstractLineCondition'>
+</details><details open id='ControlStructures.AbstractLineCondition'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Control Structures Condition Integrity</summary>
 Control structures (if, while, do-while) must have properly structured conditions. 
 This includes the usage of consistent control structures as specified by the checkedControlStructures property.
@@ -3963,7 +3963,7 @@ do {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.AssignmentInConditionSniff'>
+</details><details open id='ControlStructures.AssignmentInConditionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Assignment In Condition</summary>
 Assignment in condition statements like if, elseif, or do-while is not allowed.
 
@@ -4045,7 +4045,7 @@ do {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.BlockControlStructureSpacingSniff'>
+</details><details open id='ControlStructures.BlockControlStructureSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Block Control Structure Spacing</summary>
 Ensures proper spacing around block control structures.
 
@@ -4182,7 +4182,7 @@ while($condition){
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.DisallowContinueWithoutIntegerOperandInSwitchSniff'>
+</details><details open id='ControlStructures.DisallowContinueWithoutIntegerOperandInSwitchSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Continue Without Integer Operand In Switch</summary>
 Usage of "continue" without an integer operand in a "switch" statement is disallowed; use "break" instead.
 
@@ -4219,7 +4219,7 @@ switch ($variable) {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.DisallowEmptySniff'>
+</details><details open id='ControlStructures.DisallowEmptySniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow use of empty()</summary>
 Use of empty() is disallowed. Instead, consider using more specific conditions or isset() where appropriate.
 
@@ -4269,7 +4269,7 @@ if (!isset($value) || $value === '') {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.DisallowNullSafeObjectOperatorSniff'>
+</details><details open id='ControlStructures.DisallowNullSafeObjectOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Null-Safe Object Operator</summary>
 The null-safe operator (?->) is disallowed. Use regular null check mechanisms instead.
 
@@ -4300,7 +4300,7 @@ $value = $object?->getValue();
  </tr>
 </table>
 </details>
-<details id='ControlStructures.DisallowShortTernaryOperatorSniff'>
+<details open id='ControlStructures.DisallowShortTernaryOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Short Ternary Operator</summary>
 The use of short ternary operators is disallowed. Regular ternary operators should be used instead.
 
@@ -4327,7 +4327,7 @@ $value = $condition ?: 'falseValue';
  </tr>
 </table>
 </details>
-<details id='ControlStructures.DisallowTrailingMultiLineTernaryOperatorSniff'>
+<details open id='ControlStructures.DisallowTrailingMultiLineTernaryOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Trailing Multi-line Ternary Operator</summary>
 Trailing multi-line ternary operators must be avoided. Prefer leading the line with the ternary operator.
 
@@ -4357,7 +4357,7 @@ $variable = $condition ?
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.DisallowYodaComparisonSniff'>
+</details><details open id='ControlStructures.DisallowYodaComparisonSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Yoda Comparison</summary>
 Yoda comparisons are disallowed. Bigger or equal values must be on the left side of the comparison for better readability. This includes comparisons against all scalar values, class constants, and function return values.
 
@@ -4403,7 +4403,7 @@ if (null === foo()) {}
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.EarlyExitSniff'>
+</details><details open id='ControlStructures.EarlyExitSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Early Exit</summary>
 Code blocks should use early exits to reduce code nesting and improve readability.
 
@@ -4515,7 +4515,7 @@ function example($data) {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.JumpStatementsSpacingSniff'>
+</details><details open id='ControlStructures.JumpStatementsSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Jump Statements Spacing</summary>
 Proper spacing around jump statements (such as return, throw, yield) must be maintained. This includes a specific number of blank lines before and after the jump statements to ensure code readability and maintainability.
 
@@ -4576,7 +4576,7 @@ $anotherAction = doSomething();
 </table>
 
 Additional configurations allow fine-tuning the required spacing, such as different rules for the first or last jump statement in a case or default branch of a switch statement, or when allowing single-line yield stacking. These configurations ensure the code adheres to the desired readability standards while providing enough flexibility to accommodate various coding styles.
-</details><details id='ControlStructures.LanguageConstructWithParenthesesSniff'>
+</details><details open id='ControlStructures.LanguageConstructWithParenthesesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Language Construct With Parentheses</summary>
 Language constructs should not be used with parentheses.
 
@@ -4630,7 +4630,7 @@ yield $value; // Yield without parentheses
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.NewWithParenthesesSniff'>
+</details><details open id='ControlStructures.NewWithParenthesesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">New With Parentheses</summary>
 The "new" keyword must be followed by parentheses even when no arguments are passed.
 
@@ -4676,7 +4676,7 @@ $obj = new ClassName  'param1', 'param2';
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.NewWithoutParenthesesSniff'>
+</details><details open id='ControlStructures.NewWithoutParenthesesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">New Without Parentheses</summary>
 Omitting parentheses when instantiating a new class object without arguments is recommended.
 
@@ -4702,7 +4702,7 @@ $object = new ClassName();
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireMultiLineConditionSniff'>
+</details><details open id='ControlStructures.RequireMultiLineConditionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Multi-Line Condition</summary>
 Conditions in control structures must be split into multiple lines for readability when they are too long or complex.
 
@@ -4788,7 +4788,7 @@ $user->isVerified()) {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireMultiLineTernaryOperatorSniff'>
+</details><details open id='ControlStructures.RequireMultiLineTernaryOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Multi-Line Ternary Operator</summary>
 Ternary operators must be formatted over multiple lines if the line length exceeds the predefined limit or the expressions length meets certain conditions.
 
@@ -4816,7 +4816,7 @@ $foo = $condition ? 'result for true' : 'result for false';
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireNullCoalesceEqualOperatorSniff'>
+</details><details open id='ControlStructures.RequireNullCoalesceEqualOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Null Coalesce Equal Operator</summary>
 When applicable, the "??=" operator must be used instead of combining "=" and "??" to simplify the assignment operation when dealing with null values.
 
@@ -4842,7 +4842,7 @@ $variable = $variable ?? 'default';
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireNullSafeObjectOperatorSniff'>
+</details><details open id='ControlStructures.RequireNullSafeObjectOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Null Safe Object Operator</summary>
 Null safe object operator `?->` is required when accessing properties or methods on a potentially null object to avoid runtime errors.
 
@@ -4910,7 +4910,7 @@ $name = $user->getProfile()->getName();
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireShortTernaryOperatorSniff'>
+</details><details open id='ControlStructures.RequireShortTernaryOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Short Ternary Operator</summary>
 Short ternary operator must be used where applicable.
 
@@ -4956,7 +4956,7 @@ $value = !$condition ? 'not true' : $condition;
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireSingleLineConditionSniff'>
+</details><details open id='ControlStructures.RequireSingleLineConditionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Single Line Condition</summary>
 Conditions must be placed on a single line when they do not exceed the maximum line length or are marked as simple conditions.
 
@@ -5017,7 +5017,7 @@ while (
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireTernaryOperatorSniff'>
+</details><details open id='ControlStructures.RequireTernaryOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Ternary Operator</summary>
 Use ternary operator instead of if-else when returning a value or assigning a value to a variable.
 
@@ -5071,7 +5071,7 @@ if ($condition) {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.RequireYodaComparisonSniff'>
+</details><details open id='ControlStructures.RequireYodaComparisonSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Yoda Comparison</summary>
 Bigger value must be on the right side of comparisons. This ensures that the variable part of the condition is always on the left and the static value (like a constant or literal) is on the right. This practice is intended to prevent accidental assignment in place of comparison.
 
@@ -5157,7 +5157,7 @@ if ($variable === null) { /* ... */ }
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.UnsupportedKeywordException'>
+</details><details open id='ControlStructures.UnsupportedKeywordException'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Unsupported Keyword Exception</summary>
 Exception must be thrown with a specific message format for unsupported keywords.
 
@@ -5183,7 +5183,7 @@ throw new Exception('Unsupported operation.');
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.UselessIfConditionWithReturnSniff'>
+</details><details open id='ControlStructures.UselessIfConditionWithReturnSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless If Condition With Return</summary>
 Avoid using an if condition that only returns true or false without performing any additional operations. Simplify the code by directly returning the condition evaluation result.
 
@@ -5251,7 +5251,7 @@ if ($condition) {
 </td>
  </tr>
 </table>
-</details><details id='ControlStructures.UselessTernaryOperatorSniff'>
+</details><details open id='ControlStructures.UselessTernaryOperatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Ternary Operator</summary>
 Useless ternary operators should be avoided. This rule identifies ternary operators that can be simplified or are unnecessary because the condition expression already returns a boolean value.
 
@@ -5313,10 +5313,10 @@ if ($isEnabled) {
  </tr>
 </table>
 </details>
-</details><details id='Exceptions'>
+</details><details open id='Exceptions'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Exceptions</summary>
 <hr>
-<details id='Exceptions.DeadCatchSniff'>
+<details open id='Exceptions.DeadCatchSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Dead Catch Block</summary>
 A catch block that follows a catch block catching \Throwable is unreachable and thus considered dead code. This happens because \Throwable is the base interface for all exceptions in PHP, meaning any exception is caught by catching \Throwable, making any subsequent catch blocks dead code.
 
@@ -5390,7 +5390,7 @@ try {
 </td>
  </tr>
 </table>
-</details><details id='Exceptions.DisallowNonCapturingCatchSniff'>
+</details><details open id='Exceptions.DisallowNonCapturingCatchSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Non-Capturing Catch</summary>
 Non-capturing catch blocks are disallowed. Exceptions must be caught into a variable.
 
@@ -5424,7 +5424,7 @@ try {
 </td>
  </tr>
 </table>
-</details><details id='Exceptions.ReferenceThrowableOnlySniff'>
+</details><details open id='Exceptions.ReferenceThrowableOnlySniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">ReferenceThrowableOnly</summary>
 Only \Throwable should be referenced for catching exceptions, instead of the general \Exception. This ensures that all types of errors can be caught, not just those that extend from \Exception.
 
@@ -5540,10 +5540,10 @@ $generalError = new \Exception('A general exception');
  </tr>
 </table>
 </details>
-</details><details id='Files'>
+</details><details open id='Files'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Files</summary>
 <hr>
-<details id='Files.FileLengthSniff'>
+<details open id='Files.FileLengthSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">File Length</summary>
 File length must not exceed a specific number of lines.
 
@@ -5587,7 +5587,7 @@ class BadExample {
 </td>
  </tr>
 </table>
-</details><details id='Files.FunctionLengthSniff'>
+</details><details open id='Files.FunctionLengthSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Function Length</summary>
 FunctionLengthSniff is deprecated and should not be used. It has been moved and is now part of a different namespace.
 
@@ -5625,7 +5625,7 @@ use SlevomatCodingStandard\Sniffs\Files\FunctionLengthSniff;
 </td>
  </tr>
 </table>
-</details><details id='Files.LineLengthSniff'>
+</details><details open id='Files.LineLengthSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Line Length</summary>
 Lines must not exceed the specified maximum length limit.
 
@@ -5691,7 +5691,7 @@ use Some\Very\Long\Namespace\That\Exceeds\The\Usual\Length\Limit\And\Makes\The\L
 </td>
  </tr>
 </table>
-</details><details id='Files.TypeNameMatchesFileNameSniff'>
+</details><details open id='Files.TypeNameMatchesFileNameSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Type Name Matches File Name</summary>
 Class, interface, or trait names must match their file paths according to the configured namespace and autoloading standards.
 
@@ -5794,10 +5794,10 @@ trait Loggable
  </tr>
 </table>
 </details>
-</details><details id='Functions'>
+</details><details open id='Functions'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Functions</summary>
 <hr>
-<details id='Functions.AbstractLineCall'>
+<details open id='Functions.AbstractLineCall'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Space Before Function Call Parenthesis</summary>
 There must be a space before the opening parenthesis of a function call.
 
@@ -5863,7 +5863,7 @@ $call = 'myFunction'; $result = $call('arg1', 'arg2');
 </td>
  </tr>
 </table>
-</details><details id='Functions.ArrowFunctionDeclarationSniff'>
+</details><details open id='Functions.ArrowFunctionDeclarationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Arrow Function Declaration Spacing</summary>
 Correct spacing around arrow functions is required. There must be exactly one space after the "fn" keyword, one space before the "=>" arrow, and one space after the "=>" arrow. Multi-line arrow functions can optionally bypass these rules.
 
@@ -5930,7 +5930,7 @@ $fn = fn() <em>=></em>'test';
 </td>
  </tr>
 </table>
-</details><details id='Functions.DisallowArrowFunctionSniff'>
+</details><details open id='Functions.DisallowArrowFunctionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Arrow Function</summary>
 Use of arrow function is disallowed.
 
@@ -5956,7 +5956,7 @@ $fn = function($x) { return $x + 1; };
 </td>
  </tr>
 </table>
-</details><details id='Functions.DisallowEmptyFunctionSniff'>
+</details><details open id='Functions.DisallowEmptyFunctionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Empty Function</summary>
 Empty function body must have at least a comment to explain why it is empty.
 
@@ -6033,7 +6033,7 @@ class Example {
 </td>
  </tr>
 </table>
-</details><details id='Functions.DisallowNamedArgumentsSniff'>
+</details><details open id='Functions.DisallowNamedArgumentsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Named Arguments</summary>
 Named arguments are disallowed in function or method calls.
 
@@ -6059,7 +6059,7 @@ $example->functionName('value');
 </td>
  </tr>
 </table>
-</details><details id='Functions.DisallowTrailingCommaInCallSniff'>
+</details><details open id='Functions.DisallowTrailingCommaInCallSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Trailing Comma in Call</summary>
 Trailing comma after the last parameter in a function call is disallowed. This applies to both single-line and multi-line function calls, depending on the configuration. When `onlySingleLine` is set to true, the rule only applies to single-line function calls.
 
@@ -6178,7 +6178,7 @@ myFunction(
  </tr>
 </table>
 </details>
-<details id='Functions.DisallowTrailingCommaInClosureUseSniff'>
+<details open id='Functions.DisallowTrailingCommaInClosureUseSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Trailing Comma in Closure 'use' Syntax</summary>
 Trailing comma after the last inherited variable in "use" of closure declaration is disallowed.
 
@@ -6209,7 +6209,7 @@ $example = function() use ($foo, $bar,) {
  </tr>
 </table>
 </details>
-<details id='Functions.DisallowTrailingCommaInDeclarationSniff'>
+<details open id='Functions.DisallowTrailingCommaInDeclarationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Trailing Comma in Function Declaration</summary>
 Trailing comma after the last parameter in function declaration is disallowed.
 
@@ -6261,7 +6261,7 @@ function example(
 </td>
  </tr>
 </table>
-</details><details id='Functions.FunctionLengthSniff'>
+</details><details open id='Functions.FunctionLengthSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Function Length</summary>
 Functions must not exceed a specific number of lines (default is 20 lines).
 
@@ -6298,7 +6298,7 @@ function tooLongExample() {
 - **maxLinesLength**: The maximum number of lines a function can have. Default is 20.
 - **includeComments**: Determines if comments should be included in the line count. Default is false.
 - **includeWhitespace**: Determines if whitespace lines should be included in the line count. Default is false.
-</details><details id='Functions.NamedArgumentSpacingSniff'>
+</details><details open id='Functions.NamedArgumentSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Named Argument Spacing</summary>
 Ensure the correct spacing around named arguments: no whitespace before the colon and exactly one space after the colon.
 
@@ -6364,7 +6364,7 @@ doSomething(with:   [1, 2, 3]);
 </td>
  </tr>
 </table>
-</details><details id='Functions.RequireArrowFunctionSniff'>
+</details><details open id='Functions.RequireArrowFunctionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Arrow Function</summary>
 Arrow functions should be used whenever possible.
 
@@ -6410,7 +6410,7 @@ $fn = function() { return 'hello'; };
 </td>
  </tr>
 </table>
-</details><details id='Functions.RequireMultiLineCallSniff'>
+</details><details open id='Functions.RequireMultiLineCallSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Multi Line Call</summary>
 Multi line call syntax must be used when defining or calling functions, methods, or constructors if the line length exceeds the configured minimum line length, or parameters exceed a single line.
 
@@ -6487,7 +6487,7 @@ $object = new ClassName('arg1', 'arg2', 'arg3');
 </td>
 </tr>
 </table>
-</details><details id='Functions.RequireSingleLineCallSniff'>
+</details><details open id='Functions.RequireSingleLineCallSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Single Line Call</summary>
 Method and function calls should be placed on a single line when they meet certain criteria, such as not exceeding a specific line length, not having a closure or an array definition as parameters, and not having inner method or function calls. This ensures that the code is clean and readable.
 
@@ -6560,7 +6560,7 @@ $object = new ClassName(
 </td>
  </tr>
 </table>
-</details><details id='Functions.RequireTrailingCommaInCallSniff'>
+</details><details open id='Functions.RequireTrailingCommaInCallSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Trailing Comma in Call</summary>
 Multi-line function calls must have a trailing comma after the last parameter. This ensures easier version control changes and more readable code.
 
@@ -6618,7 +6618,7 @@ someFunction(
 </td>
  </tr>
 </table>
-</details><details id='Functions.RequireTrailingCommaInClosureUseSniff'>
+</details><details open id='Functions.RequireTrailingCommaInClosureUseSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Trailing Comma In Closure 'use'</summary>
 Multi-line "use" of closure declaration must have a trailing comma after the last inherited variable.
 
@@ -6650,7 +6650,7 @@ $example = function () use (
 </td>
  </tr>
 </table>
-</details><details id='Functions.RequireTrailingCommaInDeclarationSniff'>
+</details><details open id='Functions.RequireTrailingCommaInDeclarationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Trailing Comma in Multi-line Function Declarations</summary>
 Multi-line function declarations must have a trailing comma after the last parameter.
 
@@ -6749,7 +6749,7 @@ example(
 </td>
  </tr>
 </table>
-</details><details id='Functions.StaticClosureSniff'>
+</details><details open id='Functions.StaticClosureSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Static Closure</summary>
 Closures not using "$this" should be declared as static for better performance.
 
@@ -6804,7 +6804,7 @@ function () use ($foo) {
  </tr>
 </table>
 </details>
-<details id='Functions.StrictCallSniff'>
+<details open id='Functions.StrictCallSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Strict Call Parameters</summary>
 Strict parameter must be set to true for functions that support a strict comparison mode.
 
@@ -6837,7 +6837,7 @@ $keys = array_keys($input, $search_value);
  </tr>
 </table>
 </details>
-<details id='Functions.UnusedInheritedVariablePassedToClosureSniff'>
+<details open id='Functions.UnusedInheritedVariablePassedToClosureSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Unused Inherited Variable Passed To Closure</summary>
 Unused inherited variables passed to closures must be removed.
 
@@ -6896,7 +6896,7 @@ $example = function () use ($b) {
 </td>
  </tr>
 </table>
-</details><details id='Functions.UnusedParameterSniff'>
+</details><details open id='Functions.UnusedParameterSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Unused Parameter</summary>
 Parameters that are declared but not used inside functions/methods should be removed.
 
@@ -6979,7 +6979,7 @@ class Greeter {
  </tr>
 </table>
 </details>
-<details id='Functions.UselessParameterDefaultValueSniff'>
+<details open id='Functions.UselessParameterDefaultValueSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Parameter Default Value</summary>
 
 Parameter default values should not be specified unless necessary. If a parameter has a default value, all subsequent parameters must also have default values. Avoid using a default value for a parameter if it does not make sense or if it could lead to incorrect function behavior.
@@ -7035,10 +7035,10 @@ function example($param1 = null, $param2) {
 </table>
 </details>
 
-</details><details id='Namespaces'>
+</details><details open id='Namespaces'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Namespaces</summary>
 <hr>
-<details id='Namespaces.AbstractFullyQualifiedGlobalReference'>
+<details open id='Namespaces.AbstractFullyQualifiedGlobalReference'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">NonFullyQualifiedGlobalReference</summary>
 Global references (like functions, constants, and classes) must be fully qualified.
 
@@ -7128,7 +7128,7 @@ $value = PHP_INT_MAX; // Should be \PHP_INT_MAX
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.AlphabeticallySortedUsesSniff'>
+</details><details open id='Namespaces.AlphabeticallySortedUsesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Alphabetically Sorted Uses</summary>
 Use statements should be sorted alphabetically within the same type.
 
@@ -7190,7 +7190,7 @@ use const D\EOL; // Incorrect order due to PSR-12 compatibility, expecting funct
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.DisallowGroupUseSniff'>
+</details><details open id='Namespaces.DisallowGroupUseSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Group Use</summary>
 Group use declaration is disallowed, use single use declaration for every import.
 
@@ -7217,7 +7217,7 @@ use SlevomatCodingStandard\Sniffs\Arrays\ShortArraySyntaxSniff;
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.FullyQualifiedClassNameInAnnotationSniff'>
+</details><details open id='Namespaces.FullyQualifiedClassNameInAnnotationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Fully Qualified Class Name In Annotation</summary>
 A class name in annotations should be referenced via a fully qualified name. This includes PHPDoc annotations where classes are not imported via use statements but are directly referenced in the annotations.
 
@@ -7274,7 +7274,7 @@ A class name in annotations should be referenced via a fully qualified name. Thi
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.FullyQualifiedGlobalConstantsSniff'>
+</details><details open id='Namespaces.FullyQualifiedGlobalConstantsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Fully Qualified Global Constants</summary>
 Constant should be referenced via a fully qualified name.
 
@@ -7300,7 +7300,7 @@ echo PHP_VERSION;
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.FullyQualifiedGlobalFunctionsSniff'>
+</details><details open id='Namespaces.FullyQualifiedGlobalFunctionsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Fully Qualified Global Functions</summary>
 Global functions must be referenced via a fully qualified name to improve performance by bypassing the resolution of functions at runtime.
 
@@ -7346,7 +7346,7 @@ count($items);
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.MultipleUsesPerLineSniff'>
+</details><details open id='Namespaces.MultipleUsesPerLineSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Multiple Uses Per Line</summary>
 Each use statement must have a single used type. Multiple used types per use statement are forbidden.
 
@@ -7373,7 +7373,7 @@ use SlevomatCodingStandard\Helpers\TokenHelper, SlevomatCodingStandard\Helpers\U
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.NamespaceDeclarationSniff'>
+</details><details open id='Namespaces.NamespaceDeclarationSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Namespace Declaration Formatting</summary>
 Ensures proper spacing and syntax are used for namespace declarations.
 
@@ -7443,7 +7443,7 @@ namespace SlevomatCodingStandard\Sniffs\Namespaces {
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.NamespaceSpacingSniff'>
+</details><details open id='Namespaces.NamespaceSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Namespace Spacing</summary>
 There MUST be a specific number of blank lines before and after the namespace declaration. By default, one blank line is required before and after the namespace declaration. This number can be adjusted by configuring the <code>linesCountBeforeNamespace</code> and <code>linesCountAfterNamespace</code> properties.
 
@@ -7506,7 +7506,7 @@ class MyClass {}
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.ReferenceUsedNamesOnlySniff'>
+</details><details open id='Namespaces.ReferenceUsedNamesOnlySniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Reference Used Names Only</summary>
 References to classes, constants, and functions within a namespace must use `use` statements instead of fully qualified names or falling back to global names. This includes avoiding partial use statements and referencing global classes, functions, and constants without a leading backslash when not necessary.
 
@@ -7654,7 +7654,7 @@ throw new \RuntimeException('Error');
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.RequireOneNamespaceInFileSniff'>
+</details><details open id='Namespaces.RequireOneNamespaceInFileSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require One Namespace In File</summary>
 Only one namespace declaration is allowed per file.
 
@@ -7690,7 +7690,7 @@ class SecondClass {}
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.UnusedUsesSniff'>
+</details><details open id='Namespaces.UnusedUsesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Unused Uses</summary>
 All use statements in a namespace must be used within the file. Unused use statements should be removed to improve code readability and maintainability.
 
@@ -7812,7 +7812,7 @@ function processPeople(array $people): void {
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.UseDoesNotStartWithBackslashSniff'>
+</details><details open id='Namespaces.UseDoesNotStartWithBackslashSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Use Does Not Start With Backslash</summary>
 Use statements must not start with a backslash.
 
@@ -7838,7 +7838,7 @@ use \Some\Namespace\ClassName;
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.UseFromSameNamespaceSniff'>
+</details><details open id='Namespaces.UseFromSameNamespaceSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">No Use From Same Namespace</summary>
 Using elements from the same namespace by the `use` statement is prohibited. When a class or a function is part of the same namespace, it should be used directly without the `use` statement.
 
@@ -7911,7 +7911,7 @@ $example = new SomeClass();
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.UseOnlyWhitelistedNamespacesSniff'>
+</details><details open id='Namespaces.UseOnlyWhitelistedNamespacesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Use Only Whitelisted Namespaces</summary>
 Only namespaces that are whitelisted should be used. Fully qualify other types without importing them.
 
@@ -7993,7 +7993,7 @@ $item = new Unwhitelisted();
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.UseSpacingSniff'>
+</details><details open id='Namespaces.UseSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Use Statement Spacing</summary>
 
 This sniff ensures there are correct amounts of blank lines before the first use statement, between use statements of the same type, between use statements of different types, and after the last use statement.
@@ -8130,7 +8130,7 @@ class SampleClass {}
 </td>
  </tr>
 </table>
-</details><details id='Namespaces.UselessAliasSniff'>
+</details><details open id='Namespaces.UselessAliasSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Alias in Use Statements</summary>
 Aliases for use statements must not be redundant. If the alias is the same as the last part of the fully qualified name, it should not be used.
 
@@ -8180,10 +8180,10 @@ use SlevomatCodingStandard\Helpers\FixerHelper <em>as FixerHelper</em>;
  </tr>
 </table>
 </details>
-</details><details id='Numbers'>
+</details><details open id='Numbers'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Numbers</summary>
 <hr>
-<details id='Numbers.DisallowNumericLiteralSeparatorSniff'>
+<details open id='Numbers.DisallowNumericLiteralSeparatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Numeric Literal Separator</summary>
 Use of numeric literal separator is disallowed in numeric literals to maintain code clarity and consistency.
 
@@ -8229,7 +8229,7 @@ $num = 10.5_00;
 </td>
  </tr>
 </table>
-</details><details id='Numbers.RequireNumericLiteralSeparatorSniff'>
+</details><details open id='Numbers.RequireNumericLiteralSeparatorSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Numeric Literal Separator</summary>
 Numeric literal separators must be used for numbers longer than the specified digits before and after the decimal point. 
 This improves the readability of numeric literals. 
@@ -8280,10 +8280,10 @@ $value = 10000; // Should have a separator
  </tr>
 </table>
 </details>
-</details><details id='Operators'>
+</details><details open id='Operators'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Operators</summary>
 <hr>
-<details id='Operators.DisallowEqualOperatorsSniff'>
+<details open id='Operators.DisallowEqualOperatorsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Equal Operators</summary>
 Operators '==' and '!=' are disallowed. Use '===' and '!==' instead.
 
@@ -8337,7 +8337,7 @@ if ($value != 'example') {
 </td>
  </tr>
 </table>
-</details><details id='Operators.DisallowIncrementAndDecrementOperatorsSniff'>
+</details><details open id='Operators.DisallowIncrementAndDecrementOperatorsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Increment and Decrement Operators</summary>
 Increment and decrement operators must not be used.
 
@@ -8423,7 +8423,7 @@ $i = $i - 1;
 </td>
  </tr>
 </table>
-</details><details id='Operators.NegationOperatorSpacingSniff'>
+</details><details open id='Operators.NegationOperatorSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Negation Operator Spacing</summary>
 There MUST be exactly the configured number of spaces after the negation operator (minus sign).
 
@@ -8469,7 +8469,7 @@ $value = - $a;
 </td>
  </tr>
 </table>
-</details><details id='Operators.RequireOnlyStandaloneIncrementAndDecrementOperatorsSniff'>
+</details><details open id='Operators.RequireOnlyStandaloneIncrementAndDecrementOperatorsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Only Standalone Increment and Decrement Operators</summary>
 Increment (++) and decrement (--) operators must be used only as standalone instructions.
 
@@ -8555,7 +8555,7 @@ $sum += $array[$i--];
 </td>
  </tr>
 </table>
-</details><details id='Operators.SpreadOperatorSpacingSniff'>
+</details><details open id='Operators.SpreadOperatorSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Spread Operator Spacing</summary>
 There must be a specific number of spaces (defined by the coding standard) after the spread operator.
 
@@ -8622,10 +8622,10 @@ $values = [... $items];
  </tr>
 </table>
 </details>
-</details><details id='PHP'>
+</details><details open id='PHP'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">P H P</summary>
 <hr>
-<details id='PHP.DisallowDirectMagicInvokeCallSniff'>
+<details open id='PHP.DisallowDirectMagicInvokeCallSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Direct Magic Invoke Call</summary>
 Direct calls of __invoke() are disallowed. Instead, instantiate the object and call the method without explicitly using __invoke().
 
@@ -8653,7 +8653,7 @@ $obj->__invoke(parameters);
 </td>
  </tr>
 </table>
-</details><details id='PHP.DisallowReferenceSniff'>
+</details><details open id='PHP.DisallowReferenceSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Reference</summary>
 References (&) in assignments, function returns, function calls, and use declarations are disallowed.
 
@@ -8755,7 +8755,7 @@ $foo = $bar;
 </td>
  </tr>
 </table>
-</details><details id='PHP.ForbiddenClassesSniff'>
+</details><details open id='PHP.ForbiddenClassesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Forbidden Classes, Parent Classes, Interfaces, and Traits</summary>
 Usage of specific classes, parent classes, interfaces, and traits is forbidden within the code. Configuration properties allow defining which specific names are forbidden. Forbidden entities can be replaced with alternatives if configured.
 
@@ -8841,7 +8841,7 @@ class User { use ForbiddenTrait; }
 </td>
  </tr>
 </table>
-</details><details id='PHP.OptimizedFunctionsWithoutUnpackingSniff'>
+</details><details open id='PHP.OptimizedFunctionsWithoutUnpackingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Optimized Functions Without Unpacking</summary>
 Functions that are optimized by PHP should not use argument unpacking.
 
@@ -8907,7 +8907,7 @@ $result = $object->methodName(...$params);
 </td>
  </tr>
 </table>
-</details><details id='PHP.ReferenceSpacingSniff'>
+</details><details open id='PHP.ReferenceSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Reference Spacing</summary>
 Correct spacing after references must be adhered to.
 
@@ -8979,7 +8979,7 @@ $callback = function &<em> </em>() use ($value) {};
 </td>
  </tr>
 </table>
-</details><details id='PHP.RequireExplicitAssertionSniff'>
+</details><details open id='PHP.RequireExplicitAssertionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Explicit Assertions</summary>
 Instead of using inline documentation comments for type checks, explicit assertions must be used. This helps in maintaining type safety in a more robust and clear manner.
 
@@ -9083,7 +9083,7 @@ Using explicit assertions not only clarifies the intended types at runtime but a
 
 Assertions will throw an AssertionError if the condition evaluated is false, providing a clear indicator of type mismatches during development.
 
-</details><details id='PHP.RequireNowdocSniff'>
+</details><details open id='PHP.RequireNowdocSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Require Nowdoc Syntax</summary>
 Nowdoc syntax must be used instead of heredoc when variables and escape sequences are not required in the string.
 
@@ -9141,7 +9141,7 @@ EOD;
 </td>
  </tr>
 </table>
-</details><details id='PHP.ShortListSniff'>
+</details><details open id='PHP.ShortListSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Short List Syntax</summary>
 The short list syntax ([]) must be used instead of list(...).
 
@@ -9167,7 +9167,7 @@ list($a, $b) = array(1, 2);
 </td>
  </tr>
 </table>
-</details><details id='PHP.TypeCastSniff'>
+</details><details open id='PHP.TypeCastSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Type Casts</summary>
 Correct type casting must be used. Forbidden type casts must be avoided and replaced with valid alternatives where applicable.
 
@@ -9255,7 +9255,7 @@ $variable = (unset)$variable;
 </table>
 
 The use of "binary" cast is forbidden and has no effect. Instead of "unset", use direct null assignment or the unset function. Replace deprecated type casts (real, double, boolean, integer) with their preferred form (float, bool, int) respectively.
-</details><details id='PHP.UselessParenthesesSniff'>
+</details><details open id='PHP.UselessParenthesesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Parentheses</summary>
 Useless parentheses around expressions must not be used.
 
@@ -9461,7 +9461,7 @@ $item = ($list[$key]);
 </td>
  </tr>
 </table>
-</details><details id='PHP.UselessSemicolonSniff'>
+</details><details open id='PHP.UselessSemicolonSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Semicolon</summary>
 Useless semicolons should be removed from the code.
 
@@ -9546,10 +9546,10 @@ for ($i = 0; $i < 10; $i++); {
  </tr>
 </table>
 </details>
-</details><details id='Strings'>
+</details><details open id='Strings'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Strings</summary>
 <hr>
-<details id='Strings.DisallowVariableParsingSniff'>
+<details open id='Strings.DisallowVariableParsingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Variable Parsing in Strings</summary>
 Disallow various forms of variable parsing in strings. Options include disallowing the following syntaxes within strings: - "${...}" (Dollar Curly Syntax) - "{$...}" (Curly Dollar Syntax) - Simple syntax "$variable" The use of these variable parsing syntaxes can lead to unclear code and potential issues, especially with deprecation of "${...}" syntax as of PHP 8.2.
 
@@ -9622,10 +9622,10 @@ echo "Hello <em>{$var}</em>!";
  </tr>
 </table>
 </details>
-</details><details id='TypeHints'>
+</details><details open id='TypeHints'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Type Hints</summary>
 <hr>
-<details id='TypeHints.DeclareStrictTypesSniff'>
+<details open id='TypeHints.DeclareStrictTypesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Declare Strict Types</summary>
 The declare(strict_types=1); statement must be present, correctly formatted, and properly positioned.
 
@@ -9727,7 +9727,7 @@ class Foo {
 </td>
 </tr>
 </table>
-</details><details id='TypeHints.DisallowArrayTypeHintSyntaxSniff'>
+</details><details open id='TypeHints.DisallowArrayTypeHintSyntaxSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Array Type Hint Syntax</summary>
 Usage of array type hint syntax in phpDoc is disallowed. Generic type hint syntax should be used instead. 
 This includes both standalone array type hints and those in union types.
@@ -9795,7 +9795,7 @@ public function setItems(?array $items): void {
  </tr>
 </table>
 </details>
-<details id='TypeHints.DisallowMixedTypeHintSniff'>
+<details open id='TypeHints.DisallowMixedTypeHintSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Mixed Type Hint</summary>
 Usage of "mixed" type hint in annotations is disallowed.
 
@@ -9826,7 +9826,7 @@ Usage of "mixed" type hint in annotations is disallowed.
  </tr>
 </table>
 </details>
-<details id='TypeHints.LongTypeHintsSniff'>
+<details open id='TypeHints.LongTypeHintsSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Long Type Hints Replacement</summary>
 Short form of type hints must be used for 'int' and 'bool' types.
 
@@ -9880,7 +9880,7 @@ Short form of type hints must be used for 'int' and 'bool' types.
 </td>
  </tr>
 </table>
-</details><details id='TypeHints.NullTypeHintOnLastPositionSniff'>
+</details><details open id='TypeHints.NullTypeHintOnLastPositionSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Null Type Hint On Last Position</summary>
 The null type hint should always be in the last position when used in union type hints.
 
@@ -9912,7 +9912,7 @@ function setValue($value) {}
 </td>
  </tr>
 </table>
-</details><details id='TypeHints.NullableTypeForNullDefaultValueSniff'>
+</details><details open id='TypeHints.NullableTypeForNullDefaultValueSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Nullable Type for Null Default Value</summary>
 A parameter with a null default value must be explicitly marked as nullable.
 
@@ -9958,7 +9958,7 @@ function example(string|int $param = null) {}
 </td>
  </tr>
 </table>
-</details><details id='TypeHints.ParameterTypeHintSpacingSniff'>
+</details><details open id='TypeHints.ParameterTypeHintSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Parameter Type Hint Spacing</summary>
 Ensures proper spacing around parameter type hints.
 
@@ -10053,7 +10053,7 @@ function example(...string$parameters): void;
 </td>
  </tr>
 </table>
-</details><details id='TypeHints.PropertyTypeHintSniff'>
+</details><details open id='TypeHints.PropertyTypeHintSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Property Type Hint</summary>
 Type hints for properties must be provided when possible. The sniff checks for missing type hints,
 including native type hints, nullable type hints, union and intersection type hints, as well as type hints for traversable properties. 
@@ -10181,7 +10181,7 @@ private array $data = [];
 </td>
  </tr>
 </table>
-</details><details id='TypeHints.ReturnTypeHintSniff'>
+</details><details open id='TypeHints.ReturnTypeHintSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">ReturnTypeHint</summary>
 Functions and methods must declare return types. When possible, native return types should be used instead of annotations.
 
@@ -10348,7 +10348,7 @@ public function getItems() { /* ... */ } // Should specify the type of elements 
 </td>
  </tr>
 </table>
-</details><details id='TypeHints.ReturnTypeHintSpacingSniff'>
+</details><details open id='TypeHints.ReturnTypeHintSpacingSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">ReturnTypeHintSpacing</summary>
 Proper spacing is required around the return type declarations.
 
@@ -10454,7 +10454,7 @@ function foo()    : int {}
 </td>
  </tr>
 </table>
-</details><details id='TypeHints.UnionTypeHintFormatSniff'>
+</details><details open id='TypeHints.UnionTypeHintFormatSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Union Type Hint Format</summary>
 Union type hints must adhere to specific formatting rules based on configuration. This includes handling whitespaces around the union symbol (|), enforcing or forbidding short nullable type hints, and controlling the position of null in union types.
 
@@ -10580,7 +10580,7 @@ public function example(): null|string;
 </td>
 </tr>
 </table>
-</details><details id='TypeHints.UselessConstantTypeHintSniff'>
+</details><details open id='TypeHints.UselessConstantTypeHintSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Constant Type Hint</summary>
 Documentation comments and @var annotations for constants must be meaningful. Useless comments or @var annotations should be avoided.
 
@@ -10641,10 +10641,10 @@ const MIN_VALUE = 0;
  </tr>
 </table>
 </details>
-</details><details id='Variables'>
+</details><details open id='Variables'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Variables</summary>
 <hr>
-<details id='Variables.DisallowSuperGlobalVariableSniff'>
+<details open id='Variables.DisallowSuperGlobalVariableSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Super Global Variable</summary>
 Use of super global variable is disallowed.
 
@@ -10750,7 +10750,7 @@ $userAgent = $request->getServer('HTTP_USER_AGENT');
 </td>
 </tr>
 </table>
-</details><details id='Variables.DisallowVariableVariableSniff'>
+</details><details open id='Variables.DisallowVariableVariableSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Disallow Variable Variable</summary>
 Use of variable variable is disallowed.
 
@@ -10800,7 +10800,7 @@ ${'name'} = 'bar';
 </td>
  </tr>
 </table>
-</details><details id='Variables.DuplicateAssignmentToVariableSniff'>
+</details><details open id='Variables.DuplicateAssignmentToVariableSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Duplicate Assignment To Variable</summary>
 A variable should not be assigned more than once in a row without using the assigned value between the assignments.
 
@@ -10858,7 +10858,7 @@ $obj->prop = 2;
 </td>
  </tr>
 </table>
-</details><details id='Variables.UnusedVariableSniff'>
+</details><details open id='Variables.UnusedVariableSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Unused Variable</summary>
 Variables defined in the code must be used. Unused variables can indicate a logical error and should be removed to improve code readability and performance.
 
@@ -10975,7 +10975,7 @@ $unusedVariable = true;
 </td>
  </tr>
 </table>
-</details><details id='Variables.UselessVariableSniff'>
+</details><details open id='Variables.UselessVariableSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Useless Variable Detection</summary>
 Identifies instances where a variable is immediately returned after its definition and can be simplified to a direct return statement.
 
@@ -11085,10 +11085,10 @@ function proxy($value) {
  </tr>
 </table>
 </details>
-</details><details id='Whitespaces'>
+</details><details open id='Whitespaces'>
 <summary style="font-weight:600;font-size:1.5em;line-height:1.3;margin:0">Whitespaces</summary>
 <hr>
-<details id='Whitespaces.DuplicateSpacesSniff'>
+<details open id='Whitespaces.DuplicateSpacesSniff'>
 <summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Duplicate Spaces</summary>
 
 Duplicate spaces within the code are not allowed, except for specific cases defined by configurable exceptions.
